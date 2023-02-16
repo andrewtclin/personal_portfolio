@@ -1,0 +1,78 @@
+{
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "JAStudio Technology (Freelance, Self-Employed)",
+      "company_logo": "/images/JAstudio_logo.png",
+      "date": "Jan. 2019 - Present",
+      "job_summary": [
+        "Aside of work, I am also taking freelance projects in software.",
+        "Our team’s website: https://jastudio-tech.com/",
+        "Developed a wide range of enterprise software applications for clients internationally, which include ERP systems; Machine & Deep Learning modeling; Scripting & Automation; Desktop & Web Applications."
+      ]
+    },
+    {
+      "title": "Full Stack Engineer",
+      "company": "Spingence Technology",
+      "company_logo": "/images/spingence_logo.jpg",
+      "date": "Oct. 2020 - Feb. 2022",
+      "job_summary": [
+        "Developed applications for industrial use in the field of Automation with Artificial Intelligence, and Industry 4.0.",
+        "Apps made are now one of the most widely applied in the field of Industrial Automation with AI in Taiwan.",
+        "From the backend comprising of AI Model with various algorithms, data processing, database designing, to frontend user interface for industrial applications, providing client and intuitive, easy but powerful industrial applications."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "KSI Inc., Sinon Corporation",
+      "company_logo": "/images/ksi_logo.png",
+      "date": "Sep. 2019 - Sep. 2020",
+      "job_summary": [
+        "Developed Major ERP Accounting Systems for different departments of Central Government in Taiwan.",
+        "Participated in the development of a Food Delivering platform with Group Ordering Feature."
+      ]
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Six One Cultures Creative Co. Ltd.",
+      "company_logo": "/images/six_one_logo.png",
+      "date": "Jan. 2018 - Sep. 2019",
+      "job_summary": [
+        "Responsible for using the available business data which include sales-revenue statistics, sales-territory response, product-relevant details, and the customer-behaviour to perform a well-rounded analytical data in order to assist the company to make the future decisions and plannings."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "Machine & Deep Learning": {
+        "AI Frameworks": ["PyTorch", "Scikit-Learn"],
+        "Modules & Libraries": [
+          "NumPy",
+          "Pandas",
+          "Matplotlib",
+          "Seaborn",
+          "OpenCV",
+          "Selenium",
+          "BeautifulSoup & Scrapy"
+        ]
+      }
+    },
+    {
+      "Full Stack Development": {
+        "Backend": ["Python", "Flask", "Django"],
+        "Frontend": [
+          "ReactJS",
+          "NextJS",
+          "Svelete",
+          "JavaScript",
+          "TypeScript",
+          "Tailwind",
+          "Electron"
+        ],
+        "Databases": ["SQL", "MongoDB"],
+        "DevOps": ["Docker", "Kubernetes", "CI/CD", "Azure"]
+      }
+    }
+  ],
+  "projects": []
+}
