@@ -60,7 +60,7 @@ function Skills({ screenHeight }: Props) {
                       (subTypeDetail, subTypeDetailIdx) => (
                         <p
                           key={"subTypeDetailIdx" + subTypeDetailIdx}
-                          className="flex justify-start pl-6"
+                          className="flex justify-start pl-6 text-left"
                         >
                           {subTypeDetailIdx + 1 + ". "}
                           {subTypeDetail}

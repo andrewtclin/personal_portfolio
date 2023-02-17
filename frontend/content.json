@@ -46,7 +46,7 @@
     {
       "Machine & Deep Learning": {
         "AI Frameworks": ["PyTorch", "Scikit-Learn"],
-        "Modules & Libraries": [
+        "Libraries": [
           "NumPy",
           "Pandas",
           "Matplotlib",
@@ -74,5 +74,54 @@
       }
     }
   ],
-  "projects": []
+  "projects": [
+    {
+      "title": "LinkedIn Profile",
+      "description": "Find out more about me on LinkedIn!",
+      "link": "https://www.linkedin.com/in/andrewtclin/",
+      "img": "/images/linkedin_profile.png"
+    },
+    {
+      "title": "Medium Blogs",
+      "description": "I write technology blogs to share my knowledge, guide, and exchange information to benefit more people!",
+      "link": "https://medium.com/@chuntcdj",
+      "img": "/images/medium_profile.png"
+    },
+    {
+      "title": "JAStudio Technology",
+      "description": "I have a development team, JAStudio, and have worked with clients from different countries.\nCheck on our website for our accomplishments!",
+      "link": "https://jastudio-tech.com/",
+      "img": "/images/jastudio_profile.png"
+    },
+    {
+      "title": "Enterprise AI Image Center",
+      "description": "This enterprise app enables users to store images by categories, label images, and AI models with labelled images.",
+      "link": "",
+      "img": "/images/img_center_thumbnail.png"
+    },
+    {
+      "title": "AI Image Labelling Brush",
+      "description": "This is an AI image labelling brush tool, allowing to upload, label, and download labelled labels of an images with coordinates.",
+      "link": "https://andrewtclin.pythonanywhere.com/",
+      "img": "/images/label_thumbnail.png"
+    },
+    {
+      "title": "Machine Learning - Titanic Predictions",
+      "description": "In this project, I trained an AI model to learn the detail of each passenger, and predict the likelihood of this passenger surviving from the titanic.",
+      "link": "https://github.com/andrewtclin/ml_competition_kaggle_titanic/blob/master/competition_titanic.ipynb",
+      "img": "/images/ml_titanic_thumbnail.png"
+    },
+    {
+      "title": "E-Commerce Website",
+      "description": "This is an ecommerce website with cashflow function.",
+      "link": "",
+      "img": "/images/ecommerce_thumbnail.png"
+    },
+    {
+      "title": "Covid-19 Cases Tracking",
+      "description": "This is an covid-19 cases tracker with map and countries, including number of confirmed/recovered/death cases.",
+      "link": "https://track-covid19-jastudio.netlify.app/",
+      "img": "/images/covid_thumbnail.png"
+    }
+  ]
 }
