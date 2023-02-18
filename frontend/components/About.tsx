@@ -86,6 +86,28 @@ function About({ screenHeight }: Props) {
           >
             LinkedIn
           </a>
+          <br />
+          <br />
+          Download my Resume here: <br />
+          1.{" "}
+          <a
+            href="https://drive.google.com/file/d/16oDl6uHZiTqCTZ4N2gaJCpFiKgTQNqCO/view?usp=share_link"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            English
+          </a>
+          <br />
+          2.{" "}
+          <a
+            href="https://www.cakeresume.com/tclin-mandarin-cv"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Mandarin
+          </a>
         </p>
       </div>
     </motion.div>
