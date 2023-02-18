@@ -27,13 +27,13 @@ function Projects({ screenHeight }: Props) {
             className="pt-40 md:pt-48 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-start h-screen"
           >
             <motion.img
-              initial={{
-                y: -300,
-                opacity: 0,
-              }}
-              transition={{ duration: 1.2 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              // initial={{
+              //   y: -300,
+              //   opacity: 0,
+              // }}
+              // transition={{ duration: 1.2 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // viewport={{ once: true }}
               src={project.img}
               alt=""
               className="object-contain w-40 h-40 md:w-60 md:h-60"
