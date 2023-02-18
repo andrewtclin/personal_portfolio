@@ -12,7 +12,7 @@ function About({ screenHeight }: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col md:flex-row relative h-screen text-center md:text-left max-w-7xl px-10 justify-start mx-auto items-center"
+      className="flex flex-col md:flex-row relative h-screen text-center md:text-left max-w-7xl px-10 justify-start mx-auto items-center md:items-start"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4">
         About
@@ -33,7 +33,7 @@ function About({ screenHeight }: Props) {
           <span className="underline decoration-[#C69400]/50">me</span>.{" "}
         </h4>
         <p
-          className="text-sm sm:text-base text-left py-4 pr-2 overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#C69400]/80"
+          className="text-sm sm:text-base text-left py-4 pr-2 md:pt-12 overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#C69400]/80"
           style={
             screenHeight <= 700
               ? { height: "192px", overflowY: "scroll" }

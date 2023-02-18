@@ -22,7 +22,7 @@ function Hero({}: Props) {
 
   return (
     <div className="h-screen flex flex-col items-center justify-center space-y-8 text-center overflow-hidden">
-      <div className="flex flex-col items-center sm:flex-row mt-12 sm:mb-8">
+      <div className="flex flex-col items-center sm:flex-row pt-12 sm:mb-8">
         <motion.img
           className="relative rounded-xl w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 mx-auto object-cover hover:scale-105 transition duration-500 ease-in-out cursor-pointer "
           src="/images/hero_profile_pic.jpg"
