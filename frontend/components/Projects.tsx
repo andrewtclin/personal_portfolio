@@ -24,7 +24,7 @@ function Projects({ screenHeight }: Props) {
         {content.projects.map((project, idx) => (
           <div
             key={idx}
-            className="pt-40 md:pt-48 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-start h-screen"
+            className="pt-48 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-start h-screen"
           >
             <motion.img
               // initial={{
