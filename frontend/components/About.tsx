@@ -24,7 +24,7 @@ function About({ screenHeight }: Props) {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         src="/images/about_profile_pic.jpg"
-        className="mt-40 md:mr-0 w-36 h-36 md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] rounded-full md:rounded-lg overflow-hidden flex-shrink-0 object-cover object-top"
+        className="mt-40 md:mr-0 w-36 h-36 md:w-64 md:h-96 xl:w-[400px] xl:h-[500px] rounded-full md:rounded-lg overflow-hidden flex-shrink-0 object-cover object-top"
       />
 
       <div className="pt-6 space-y-5 px-0 md:px-10 md:mt-32">
