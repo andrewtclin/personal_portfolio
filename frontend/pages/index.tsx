@@ -112,7 +112,7 @@ export default function Home() {
 
       <Head>
         <title>Ta-Chun | TC Lin | Portfolio</title>
-        <link rel="apple-touch-icon" href="/logo192.jpg" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.jpg" />
       </Head>
 
       <Header />
