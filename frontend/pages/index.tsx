@@ -112,7 +112,15 @@ export default function Home() {
 
       <Head>
         <title>Ta-Chun | TC Lin | Portfolio</title>
-        <link rel="apple-touch-icon" href="/logo192.jpg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logo192.jpg" />
+        <meta
+          name="keywords"
+          content="Artificial Intelligence, AI, Machine Learning, Deep Learning, Software, Development, App, Web, Technology, HTML, CSS, JavaScript"
+        />
+        <meta
+          name="description"
+          content="TC Lin. | Expert of Software Development | Machine Learning | Deep Learning"
+        />
       </Head>
 
       <Header />
