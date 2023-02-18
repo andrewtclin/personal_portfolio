@@ -2,15 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-type Props = {};
+type Props = {
+  screenHeight: number;
+};
 
-function About({}: Props) {
+function About({ screenHeight }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col md:flex-row relative h-screen text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="flex flex-col md:flex-row relative h-screen text-center md:text-left max-w-7xl px-10 justify-start mx-auto items-center"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4">
         About
@@ -22,15 +24,26 @@ function About({}: Props) {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         src="/images/about_profile_pic.jpg"
-        className="mt-32 md:mr-0 w-36 h-36 md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] rounded-full md:rounded-lg overflow-hidden flex-shrink-0 object-cover object-top"
+        className="mt-40 md:mr-0 w-36 h-36 md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] rounded-full md:rounded-lg overflow-hidden flex-shrink-0 object-cover object-top"
       />
 
-      <div className="space-y-5 px-0 md:px-10 md:mt-32">
+      <div className="pt-6 space-y-5 px-0 md:px-10 md:mt-32">
         <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold pl-4 text-center md:text-start md:pl-0">
           Some information about{" "}
           <span className="underline decoration-[#C69400]/50">me</span>.{" "}
         </h4>
-        <p className="text-sm sm:text-base text-left py-4 pr-2 overflow-y-scroll h-48 md:h-80 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#C69400]/80">
+        <p
+          className="text-sm sm:text-base text-left py-4 pr-2 overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#C69400]/80"
+          style={
+            screenHeight <= 700
+              ? { height: "192px", overflowY: "scroll" }
+              : screenHeight > 700 && screenHeight <= 800
+              ? { height: "320px", overflowY: "scroll" }
+              : screenHeight > 800 && screenHeight <= 900
+              ? { height: "400px", overflowY: "scroll" }
+              : { height: "100%" }
+          }
+        >
           I am a Software Engineer who has led and built enterprise-level
           projects in various fields: ERP Systems, Machine & Deep Learning,
           Scripting & Automating, Web & Desktop Applications.

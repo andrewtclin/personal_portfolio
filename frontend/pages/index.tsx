@@ -123,7 +123,7 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="snap-start">
-        <About />
+        <About screenHeight={screenHeight} />
       </section>
 
       {/* Experience */}
