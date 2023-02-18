@@ -106,12 +106,12 @@ export default function Home() {
           init={particlesInit}
           loaded={particlesLoaded}
           className="fixed inset-0 z-0"
-          options={particlesOptions}
+          options={particlesOptions as any}
         />
       </motion.div>
 
       <Head>
-        <title>TC. Lin</title>
+        <title>Ta-Chun | TC Lin | Portfolio</title>
       </Head>
 
       <Header />

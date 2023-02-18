@@ -14,9 +14,9 @@ function Projects({ screenHeight }: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className="h-screen relative flex overflow-hidden flex-col text-center md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4">
         Projects
       </h3>
 
@@ -24,7 +24,7 @@ function Projects({ screenHeight }: Props) {
         {content.projects.map((project, idx) => (
           <div
             key={idx}
-            className="mt-24 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-start p-16 md:p-44 h-screen"
+            className="pt-40 md:pt-48 w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-start h-screen"
           >
             <motion.img
               initial={{
@@ -36,9 +36,9 @@ function Projects({ screenHeight }: Props) {
               viewport={{ once: true }}
               src={project.img}
               alt=""
-              className="object-contain w-40 h-40"
+              className="object-contain w-40 h-40 md:w-60 md:h-60"
             />
-            <div className="px-0 md:px-10 max-w-6xl">
+            <div className="px-0 md:px-10 max-w-6xl flex flex-col items-center">
               <h4 className="text-2xl font-semibold text-center underline decoration-[#C69400]/50">
                 {idx + 1} of {content.projects.length}
               </h4>
@@ -57,27 +57,26 @@ function Projects({ screenHeight }: Props) {
               ) : (
                 ""
               )}
-
               <p
-                className="text-center md:text-left h-48 pt-4"
-                style={
-                  screenHeight <= 700
-                    ? {
-                        height: "192px",
-                        overflowY: "scroll",
-                      }
-                    : screenHeight <= 800
-                    ? {
-                        height: "250px",
-                        overflowY: "scroll",
-                      }
-                    : screenHeight <= 900
-                    ? {
-                        height: "300px",
-                        overflowY: "scroll",
-                      }
-                    : { height: "100%" }
-                }
+                className="text-center w-80 pt-4"
+                // style={
+                //   screenHeight <= 700
+                //     ? {
+                //         height: "192px",
+                //         overflowY: "scroll",
+                //       }
+                //     : screenHeight > 700 && screenHeight <= 800
+                //     ? {
+                //         height: "250px",
+                //         overflowY: "scroll",
+                //       }
+                //     : screenHeight > 800 && screenHeight <= 900
+                //     ? {
+                //         height: "300px",
+                //         overflowY: "scroll",
+                //       }
+                //     : { height: "100%" }
+                // }
               >
                 {project.description}
               </p>
@@ -86,7 +85,16 @@ function Projects({ screenHeight }: Props) {
         ))}
       </div>
 
-      <div className="w-full absolute top-[30%] bg-[#C69400]/10 left-0 h-[500px] -skew-y-12" />
+      <div
+        className="w-full absolute top-[30%] bg-[#C69400]/10 left-0 -skew-y-12 z-0"
+        style={
+          screenHeight <= 700
+            ? { height: "300px" }
+            : screenHeight > 700 && screenHeight <= 950
+            ? { height: "400px" }
+            : { height: "500px" }
+        }
+      />
     </motion.div>
   );
 }

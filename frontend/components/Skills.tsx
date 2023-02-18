@@ -31,7 +31,7 @@ function Skills({ screenHeight }: Props) {
       transition={{ duration: 1.5 }}
       className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4">
         Skills
       </h3>
       <div
@@ -39,7 +39,7 @@ function Skills({ screenHeight }: Props) {
         style={
           screenHeight <= 700
             ? { height: "400px", overflowY: "scroll", marginTop: "60px" }
-            : screenHeight <= 950
+            : screenHeight > 700 && screenHeight <= 950
             ? { height: "500px", overflowY: "scroll", marginTop: "60px" }
             : { height: "100%" }
         }
@@ -86,7 +86,7 @@ function Skills({ screenHeight }: Props) {
         style={
           screenHeight <= 700
             ? { height: "300px" }
-            : screenHeight <= 950
+            : screenHeight > 700 && screenHeight <= 950
             ? { height: "400px" }
             : { height: "500px" }
         }

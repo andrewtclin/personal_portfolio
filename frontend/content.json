@@ -112,6 +112,12 @@
       "img": "/images/ml_titanic_thumbnail.png"
     },
     {
+      "title": "Running E-Commerce Shopping Site",
+      "description": "This project is a shopping site that is fully functional and running online available for purchasing items.",
+      "link": "https://www.privatecuisine.tw/products/%E7%B4%94%E7%85%89%E7%B4%85%E7%87%92%E8%BB%9F%E9%AA%A8%E8%82%891%E7%9B%922%E5%8C%85",
+      "img": "/images/ecommerce2_thumbnail.png"
+    },
+    {
       "title": "E-Commerce Website",
       "description": "This is an ecommerce website with cashflow function.",
       "link": "",
@@ -122,6 +128,24 @@
       "description": "This is an covid-19 cases tracker with map and countries, including number of confirmed/recovered/death cases.",
       "link": "https://track-covid19-jastudio.netlify.app/",
       "img": "/images/covid_thumbnail.png"
+    },
+    {
+      "title": "Tik Tok - Rebuilt",
+      "description": "This is a clone of Tik Tok, with playable videos and features.",
+      "link": "https://tiktok-clone-20599.web.app/",
+      "img": "/images/tiktok_thumbnail.png"
+    },
+    {
+      "title": "Amazon - Shopping Page Rebuilt",
+      "description": "This project is a clone of Amazon shopping site, including its design and the color.",
+      "link": "https://clone-27359.web.app/",
+      "img": "/images/amazon_thumbnail.png"
+    },
+    {
+      "title": "More Projects...",
+      "description": "There are more completed large projects in the field of AI Industrial Apps, Web Applications, ERP Systems.",
+      "link": "",
+      "img": "/images/more_thumbnail.png"
     }
   ]
 }
