@@ -28,7 +28,7 @@ function Hero({}: Props) {
           src="/images/hero_profile_pic.jpg"
           alt="Profile Image"
         />
-        <div className="w-80 pt-5 grid grid-cols-2 gap-y-4 mt-4 sm:mt-0 z-20">
+        <div className="w-80 pl-0 sm:pl-6 pt-5 grid grid-cols-2 gap-y-4 mt-4 sm:mt-0 z-20">
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>

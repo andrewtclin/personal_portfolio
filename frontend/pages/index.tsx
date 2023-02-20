@@ -22,9 +22,11 @@ import Education from "@/components/Education";
 
 export default function Home() {
   const [screenHeight, setScreenHeight] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(0);
 
   const handleScreenResize = () => {
     setScreenHeight(window.innerHeight);
+    setScreenWidth(window.innerWidth);
   };
 
   useEffect(() => {
@@ -133,7 +135,7 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="snap-start">
-        <About screenHeight={screenHeight} />
+        <About screenHeight={screenHeight} screenWidth={screenWidth} />
       </section>
 
       {/* Experience */}

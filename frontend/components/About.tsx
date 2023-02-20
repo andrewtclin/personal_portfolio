@@ -4,9 +4,10 @@ import Link from "next/link";
 
 type Props = {
   screenHeight: number;
+  screenWidth: number;
 };
 
-function About({ screenHeight }: Props) {
+function About({ screenHeight, screenWidth }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -35,11 +36,11 @@ function About({ screenHeight }: Props) {
         <p
           className="text-sm sm:text-base text-left py-4 pr-2 md:pt-12 overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#C69400]/80"
           style={
-            screenHeight <= 700
+            screenHeight <= 700 && screenWidth <= 1280
               ? { height: "192px", overflowY: "scroll" }
-              : screenHeight > 700 && screenHeight <= 800
+              : screenHeight > 700 && screenHeight <= 800 && screenWidth <= 1280
               ? { height: "320px", overflowY: "scroll" }
-              : screenHeight > 800 && screenHeight <= 900
+              : screenHeight > 800 && screenHeight <= 900 && screenWidth <= 1280
               ? { height: "400px", overflowY: "scroll" }
               : { height: "100%" }
           }
