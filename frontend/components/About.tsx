@@ -34,7 +34,7 @@ function About({ screenHeight, screenWidth }: Props) {
           <span className="underline decoration-[#C69400]/50">me</span>.{" "}
         </h4>
         <p
-          className="text-sm sm:text-base text-left py-4 pr-2 md:pt-12 overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#C69400]/80"
+          className="text-sm sm:text-base text-left py-4 pr-2  md:pt-0 overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#C69400]/80 "
           style={
             screenHeight <= 700 && screenWidth <= 1280
               ? { height: "192px", overflowY: "scroll" }
