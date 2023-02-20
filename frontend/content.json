@@ -42,6 +42,32 @@
       ]
     }
   ],
+  "education": [
+    {
+      "institution": "Queensland University of Technology (QUT), Australia",
+      "degree": "Master of IT - Computer Science",
+      "logo": "/images/qut_logo.jpg",
+      "date": "Feb. 2023 - Present (Jun. 2024)"
+    },
+    {
+      "institution": "The University of Queensland (UQ), Australia",
+      "degree": "Master of Science",
+      "logo": "/images/uq_logo.png",
+      "date": "Feb. 2015 - Dec. 2017"
+    },
+    {
+      "institution": "DeepLearning.AI",
+      "degree": "Deep Learning Specialization",
+      "logo": "/images/deeplearningai_logo.png",
+      "date": "2021"
+    },
+    {
+      "institution": "Gjun Information School",
+      "degree": "Java Web Development",
+      "logo": "/images/gjun_logo.png",
+      "date": "2019"
+    }
+  ],
   "skills": [
     {
       "Machine & Deep Learning": {

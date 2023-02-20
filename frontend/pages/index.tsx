@@ -18,6 +18,7 @@ import { loadFull } from "tsparticles";
 import { motion } from "framer-motion";
 
 import { ArrowUpIcon } from "@heroicons/react/24/solid";
+import Education from "@/components/Education";
 
 export default function Home() {
   const [screenHeight, setScreenHeight] = useState(0);
@@ -138,6 +139,11 @@ export default function Home() {
       {/* Experience */}
       <section id="experience" className="snap-center">
         <Experience screenHeight={screenHeight} />
+      </section>
+
+      {/* Education */}
+      <section id="education" className="snap-center">
+        <Education />
       </section>
 
       {/* Skills */}

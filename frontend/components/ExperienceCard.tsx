@@ -22,6 +22,7 @@ function ExperienceCard({ info, screenHeight }: Props) {
         className="w-16 h-16  object-cover object-center"
         src={info.company_logo}
         alt="company logo"
+        unoptimized={true}
       />
       <div className="px-0 flex flex-col items-center">
         <h4 className="text-md sm:text-lg text-center">{info.company}</h4>
